@@ -1,0 +1,77 @@
+#colecciones{ 
+    padding:1em 4em;
+    margin:40px 0 0 0;
+}
+
+#colecciones .collect-title{ 
+    text-align: center;
+    color: #fff;
+    font-size: 45px;
+    font-weight: bold;
+    margin: 0 0 30px 0;
+}
+
+#colecciones .card-content{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:3em;
+    flex-wrap: wrap;
+}
+
+#colecciones .card-content .nft-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:0.5em;
+    width: 300px;
+    padding:1em;
+    background-color: rgb(26, 25, 25);
+    border-radius: 15px;
+    box-shadow: 2px 2px 6px #000;
+    transition: 300ms all;
+}
+
+.baner-content{
+    width: 290px;
+    overflow: hidden;
+}
+
+#colecciones .card-content .baner{
+    width: 100%;
+    transition: 500ms all;
+}
+
+#colecciones .card-content .colection-desc{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#colecciones .card-content .btn-market{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:6px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    border:none;
+    background-color: var(--pinck);
+    padding: 0.4em 1em;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.nft-card:hover .baner{
+    transform: scale(1.1);
+}
+
+.nft-card:hover{
+    border: solid 2px var(--pinck);
+}
+
+
+

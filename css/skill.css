@@ -1,0 +1,99 @@
+#habilidades{
+    padding:6em 4em;
+    background-color: var(--card);
+}
+
+#habilidades .skill-title {
+    color: #fff;
+    text-align: center;
+    font-size: 45px;
+    margin:0 0 30px 0;
+    font-weight: bold;
+}
+
+#habilidades article{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1em;
+}
+
+.skill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.skill .skill-text{
+    color: #fff;
+}
+
+.skill .skil-bar{
+    position: relative;
+    width: 150px;
+    height: 7px;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+.skill .skil-bar::before{
+    position: absolute;
+    content: '';
+    width: 150px;
+    height: 7px;
+    background-color: rgb(237, 16, 89);
+}
+
+
+
+.skill .skill--1::before{
+    transform: translateX(-10%);
+}
+
+
+.skill .skill--2::before{
+    transform: translateX(-10%);
+}
+
+.skill .skill--3::before{
+    transform: translateX(-30%);
+}
+.skill .skill--4::before{
+    transform: translateX(-40%);
+}
+
+@media (max-width:600px) {
+    #habilidades article{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap:1em;
+    }
+}
+.cv-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.download{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:6px;
+    font-size: 20px;
+    padding: 0.3em 1em;
+    border-radius: 10px;
+    cursor: pointer;
+    color:#fff;
+    background-color: var(--pinck);
+    font-weight: bold;
+    margin:20px 0;
+    border: none;
+}

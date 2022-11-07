@@ -1,0 +1,47 @@
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style:none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+*::before, *::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root{
+    --card:rgb(26, 25, 25);
+    --bg:rgb(12, 12, 12);
+    --pinck:rgb(237, 16, 89);
+}
+
+::placeholder{
+    color:#000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    opacity: 0.7;
+}
+
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+section{
+    scroll-margin-top: 70px;
+}
+
+p{
+    scroll-margin-top: 70px;
+}
+
+body{
+    background-color: rgb(12, 12, 12);
+}
