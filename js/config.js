@@ -26,9 +26,11 @@ function createCollections(){
         let nftCard = document.createElement("div");
         nftCard.className = "nft-card";
         nftCard.innerHTML = `
-        <div class="baner-content"><img class="baner" alt="baner-img" src=${item.baner}></img></div>
+        <figure class="baner-content">
+            <img class="baner" alt="Imagen de coleccion" src=${item.baner}></img>
+        </figure>
         <p class="colection-desc">${item.desc}</p>
-        <a href="${item.url}"><buttom class="btn-market"><ion-icon name="eye"></ion-icon>Ver</buttom></a>
+        <nav><a href="${item.url}" rel="nofollow" target="_blank"><buttom class="btn-market"><ion-icon name="eye"></ion-icon>Ver</buttom></a></nav>
         `;
         cardContent.append(nftCard);
     })

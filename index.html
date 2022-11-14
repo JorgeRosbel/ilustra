@@ -39,61 +39,59 @@
         <a class="link" href="#colecciones">Colecciones</a>
         <a class="link" href="#comisiones">Comisiones</a>
         <a class="link" href="#trabajos">Trabajos</a>
+        <a class="link" href="#contacto">Contacto</a>
       </nav>
     </header>
     <div class="layer"></div>
     <main>
         <section id="inicio">
             <div class="inicio-content">
-                <img src="./images/perfil.jpg" alt="img-perfil" class="img-inicio">
+                <img src="./images/perfil.jpg" alt="Foto de perfil de Claudia" class="img-inicio">
                 <h1>Hola, soy <span>Claudia Marina</span></h1>
                 <h2>Te ofrezco contenido único, femenino y lindo</h2>
                 <a href="#sobre_mi"><button class="start-btn"><ion-icon name="arrow-down"></ion-icon></button></a>
-                <div class="stiky-menu">
-                  <a href="#"><ion-icon class="red-1" name="logo-twitter"></ion-icon></a>
-                  <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-                  <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-                </div>
+                <nav class="stiky-menu">
+                  <a href="#" rel="nofollow" target="_blank"><ion-icon class="red-1" name="logo-twitter"></ion-icon></a>
+                  <a href="#" rel="nofollow" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                  <a href="#" rel="nofollow" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                </nav>
             </div>
         </section>
 
-        <section id="sobre_mi">
-            <p class="about-title"><span>Sob</span>re mi</p>
+        <section id="sobre_mi" itemscope itemtype="https://schema.org/ScholarlyArticle">
+            <p class="about-title" itemprop="name"><span>Sob</span>re mi</p>
             <article class="about-me">
-                <p class="about-info">
-                    Mi nombre es Claudia, mejor conocida como Aquamarina. Desde pequeña
-                    disfruto mucho creando personajes rodeada de magia, dibujar siempre
-                    ha sido uno de los pequeños placeres de la vida para mí. Sin
-                    embargo, nunca tuve la oportunidad de estudiar nada relacionado con
+                <p class="about-info" itemprop="description">
+                    Mi nombre es <strong>Claudia Marina</strong>, mejor conocida como <strong>Aquamarina</strong>. Desde pequeña
+                    disfruto mucho creando personajes rodeada de magia, <strong>dibujar</strong> siempre
+                    ha sido uno de los pequeños placeres de la vida para mí. <br><br>Sin
+                    embargo, <strong>nunca tuve la oportunidad de estudiar nada relacionado con
                     el arte, mi trabajo es el resultado de un conocimiento 100%
-                    autodidacta y muchas horas de esfuerzo y dedicación.
+                    autodidacta y muchas horas de esfuerzo y dedicación.</strong>
                 </p>
 
                 <div class="informacion">
-                    <div class="bloque-1">
-                        <p class="informacion-title"><ion-icon name="person-circle"></ion-icon>Informacion Personal</p>
-                        <p class="elemento"><span>Nombre:</span> Claudia Maria</p>
-                        <p class="elemento"><span>Edad:</span> 23</p>
-                        <p class="elemento"><span>Email:</span> clauilustra@gmail.com</p>
-                        <p class="elemento"><span>Ocupacion:</span> Ilustradora freelance</p>
-                    </div>
-
-                    
-                    <div class="bloque-2">
-                        <p class="elemento_2">Musica<ion-icon name="musical-notes"></ion-icon></p>
-                        <p class="elemento_2">Arte<ion-icon name="color-palette"></ion-icon></p>
-                        <p class="elemento_2">Gaticos<ion-icon name="paw"></ion-icon></p>
-                        <p class="elemento_2">Cripto<ion-icon name="logo-bitcoin"></ion-icon></p>
-                        <p class="elemento_2">Twitter<ion-icon name="logo-twitter"></ion-icon></p>
-                        <p class="elemento_2">Viajes<ion-icon name="car-sport"></ion-icon></p>
-
-                    </div>
+                    <ul class="bloque-1" itemscope itemtype="http://schema.org/Person">
+                        <li class="informacion-title"><ion-icon name="person-circle"></ion-icon>Informacion Personal</li>
+                        <li class="elemento" itemprop="name"><span>Nombre:</span> Claudia Maria</li>
+                        <li class="elemento"><span>Edad:</span> 23</li>
+                        <li class="elemento" itemprop="email"><span>Email:</span> clauilustra@gmail.com</li>
+                        <li class="elemento" itemprop="jobTitle"><span>Ocupacion:</span> Ilustradora freelance</li>
+                    </ul>
+                    <ul class="bloque-2">
+                        <li class="elemento_2">Musica<ion-icon name="musical-notes"></ion-icon></li>
+                        <li class="elemento_2">Arte<ion-icon name="color-palette"></ion-icon></li>
+                        <li class="elemento_2">Gaticos<ion-icon name="paw"></ion-icon></li>
+                        <li class="elemento_2">Cripto<ion-icon name="logo-bitcoin"></ion-icon></li>
+                        <li class="elemento_2">Twitter<ion-icon name="logo-twitter"></ion-icon></li>
+                        <li class="elemento_2">Viajes<ion-icon name="car-sport"></ion-icon></li>
+                    </ul>
                 </div>
-                <div class="cv-content">
+                <nav class="cv-content">
                   <a download="claudiaIlustrada--CV" href="download/cv.pdf">
                     <button class="download">Descargar .cv<ion-icon name="cloud-download"></ion-icon></button>
                   </a>
-                </div>
+                </nav>
             </article>
         </section>
 
@@ -119,32 +117,42 @@
           </article>
         </section>
     
-        <section id="colecciones">
-            <p class="collect-title"><span>Mis</span> colecciones</p>
-        </section>
+        <section id="colecciones"><p class="collect-title"><span>Mis</span> colecciones</p></section>
 
         <section id="comisiones">
           <p class="comisiones-title"><span>Com</span>isiones</p>
           <article>
             <div class="comisiones-card-content">
-              <div class="comisiones-card">
-                <img src="images/lineart.png" alt="lineado-img" class="comisiones-img">
-                <p class="img-title">Lineado</p>
-                <p class="img-price">Retrato: $25</p>
-                <p class="img-price">Medio cuerpo: $50</p>
-              </div>
-              <div class="comisiones-card">
-                <img src="images/simple-color.jpg" alt="simple-color-img" class="comisiones-img">
-                <p class="img-title">Coloreado simple</p>
-                <p class="img-price">Retrato: $50</p>
-                <p class="img-price">Medio cuerpo: $80</p>
-              </div>
-              <div class="comisiones-card">
-                <img src="images/full-details.jpg" alt="full-details-img" class="comisiones-img">
-                <p class="img-title">Todos los detalles</p>
-                <p class="img-price">Retrato: $100</p>
-                <p class="img-price">Medio cuerpo: $150</p>
-              </div>
+              <figure class="comisiones-card">
+                <img src="images/lineart.png" alt="Imagen de Lineado" class="comisiones-img">
+                <figcaption>
+                  <ul class="ul-comisiones">
+                    <li class="img-title">Lineado</li>
+                    <li class="img-price">Retrato: $25</li>
+                    <li class="img-price">Medio cuerpo: $50</li>
+                  </ul>
+                </figcaption>
+              </figure>
+              <figure class="comisiones-card">
+                <img src="images/simple-color.jpg" alt="Imagen de coloreado simple" class="comisiones-img">
+                <figcaption>
+                  <ul class="ul-comisiones">
+                    <li class="img-title">Coloreado simple</li>
+                    <li  class="img-price">Retrato: $50</li>
+                    <li  class="img-price">Medio cuerpo: $80</li>
+                  </ul>
+                </figcaption>
+              </figure>
+              <figure class="comisiones-card">
+                <img src="images/full-details.jpg" alt="Imagen de todos los detalles" class="comisiones-img">
+                <figcaption>
+                  <ul class="ul-comisiones">
+                    <li class="img-title">Todos los detalles</li>
+                    <li class="img-price">Retrato: $100</li>
+                    <li class="img-price">Medio cuerpo: $150</li>
+                  </ul>
+                </figcaption>
+              </figure>
             </div>
           </article>
         </section>
@@ -153,14 +161,14 @@
           <p class="works-title"><span>Tra</span>bajos</p>
           <div class="slider-content">
             <div class="slider" id="slider">
-              <div class="slider__section"><img src="images/0.jpg" alt="img-1" class="slider__img"></div>
-              <div class="slider__section"><img src="images/1.jpg" alt="img-2" class="slider__img"></div>
-              <div class="slider__section"><img src="images/2.jpg" alt="img-3" class="slider__img"></div>
-              <div class="slider__section"><img src="images/full-details.jpg" alt="img-3" class="slider__img"></div>
-              <div class="slider__section"><img src="images/4.jpg" alt="img-3" class="slider__img"></div>
-              <div class="slider__section"><img src="images/5.jpg" alt="img-3" class="slider__img"></div>
-              <div class="slider__section"><img src="images/6.jpg" alt="img-3" class="slider__img"></div>
-              <div class="slider__section"><img src="images/7.jpg" alt="img-3" class="slider__img"></div>
+              <figure class="slider__section"><img src="images/0.jpg" alt="Ejemplo-1 de trabajo" class="slider__img"></figure>
+              <figure  class="slider__section"><img src="images/1.jpg" alt="Ejemplo-2 de trabajo" class="slider__img"></figure >
+              <figure  class="slider__section"><img src="images/2.jpg" alt="Ejemplo-3 de trabajo" class="slider__img"></figure >
+              <figure class="slider__section"><img src="images/full-details.jpg" alt="Ejemplo-4 de trabajo" class="slider__img"></figure >
+              <figure  class="slider__section"><img src="images/4.jpg" alt="Ejemplo-5 de trabajo" class="slider__img"></figure>
+              <figure  class="slider__section"><img src="images/5.jpg" alt="Ejemplo-6 de trabajo" class="slider__img"></figure>
+              <figure  class="slider__section"><img src="images/6.jpg" alt="Ejemplo-7 de trabajo" class="slider__img"></figure >
+              <figure  class="slider__section"><img src="images/7.jpg" alt="Ejemplo-8 de trabajo" class="slider__img"></figure >
             </div>
           </div>
           <div class="btn-content">
@@ -173,14 +181,36 @@
           <p class="contact-title"><span>Con</span>tacto</p>
           <article>
             <form id="form">
-              <ion-icon name="mail-open-outline"></ion-icon>
-              <input class="input-text name" type="text" name="name" placeholder="Nombre" required>
-              <input class="input-text subject" type="text" name="asunto" placeholder="Asunto" required>
-              <input class="input-text tel" type="number" name="tel" placeholder="Telefono" required>
-              <input class="input-text email" type="email" name="email" placeholder="Email" required>
-              <textarea class="text" name="message" placeholder="Escriba su mensaje" required></textarea>
-              <input class="submit" type="submit" name="send" value="Enviar">
+              <fieldset>
+                <ion-icon name="mail-open-outline"></ion-icon>
+                <input class="input-text name" type="text" name="name" placeholder="Nombre" required>
+                <input class="input-text subject" type="text" name="asunto" placeholder="Asunto" required>
+                <input class="input-text tel" type="number" name="tel" placeholder="Telefono" required>
+                <input class="input-text email" type="email" name="email" placeholder="Email" required>
+                <textarea class="text" name="message" placeholder="Escriba su mensaje" required></textarea>
+                <input class="submit" type="submit" name="send" value="Enviar">
+              </fieldset>
             </form>
+
+            <div class="box-social">
+              <ion-icon class="globe" name="globe"></ion-icon>
+              <nav class="nav-contact">
+                <a href="#" rel="nofollow" target="_blank"><p class="social-title"><ion-icon name="logo-twitter"></ion-icon>Twitter</p></a>
+                <a href="#" rel="nofollow" target="_blank"><p class="social-title"><ion-icon name="logo-instagram"></ion-icon>Instagram</p></a>
+                <a href="#" rel="nofollow" target="_blank"><p class="social-title"><ion-icon name="logo-facebook"></ion-icon>Facebook</p></a>
+                <a href="#" rel="nofollow" target="_blank"><p class="social-title"><ion-icon name="logo-facebook"></ion-icon>Linkedin</p></a>
+                <a href="#" rel="nofollow" target="_blank">
+                  <p class="social-title">
+                    <ion-icon name="triangle"></ion-icon>
+                    <ion-icon name="ellipse"></ion-icon>
+                    <ion-icon name="square"></ion-icon>
+                    </span>
+                    Foundation
+                  </p>
+                </a>
+                <a href="#" rel="nofollow" target="_blank"><p class="social-title">Objkt.com</p></a>
+              </nav>
+            </div>
           </article>
         </section>
     </main>

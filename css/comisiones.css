@@ -1,3 +1,13 @@
+figcaption,
+.ul-comisiones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1em;
+}
+
+
 #comisiones{
     padding:2em 4em;
     background-color: var(--card);
